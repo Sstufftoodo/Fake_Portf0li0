@@ -1,5 +1,6 @@
 body{
 	font-family: 'IBM Plex Mono', monospace;
+	background-color: #EEEEEE;
 }
 body, ul{
 	margin: 0;
@@ -8,15 +9,14 @@ body, ul{
 
 h1,h2, .skill-list {
 	font-family: 'Inknut Antiqua', serif;
-
 }
 
 img{
-	/*this limit width image*/
+	/*this is a width limit for an image*/
 	max-width: 100%;
 }
 nav{
-	background-color: #DBEBF4;
+	background-color: #FEAE6F;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
@@ -25,7 +25,7 @@ header{
 	top:70px;
 	position: relative;
 	margin-bottom:  220px;
-	background-image: url('../img/background.png');
+	background-image: url('../img/BackgroundOrangeREVAMP.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: -140px; 
@@ -44,7 +44,6 @@ nav ul{
 	margin: 0 auto;
 	text-align: center;
 	padding: 30px;
-
 }
 
 h1{
@@ -91,7 +90,6 @@ figcaption{
 .intro-img{
 	box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
 	margin-top: 30px;
-
 }
 
 .skill-list {
@@ -106,7 +104,7 @@ figcaption{
 }
 
 .blue{
-	background-color: #DBEBF4;
+	background-color: #FEAE6F;
 }
 
 .project .button{
