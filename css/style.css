@@ -1,5 +1,40 @@
+@font-face {
+    font-family: "half-life";
+    src: url(../Fonts/HalfLife.ttf);
+}
+@font-face {
+	font-family: "TF2";
+	src: url(../Fonts/TF2.ttf);
+}
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@keyframes typing{
+    from{
+        width: 0
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+  }  
 body{
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: "TF2";
 	background-color: #EEEEEE;
 }
 body, ul{
@@ -8,7 +43,8 @@ body, ul{
 }
 
 h1,h2, .skill-list {
-	font-family: 'Inknut Antiqua', serif;
+	font-family: TF2;
+	
 }
 
 img{
@@ -19,6 +55,7 @@ nav{
 	background-color: #FEAE6F;
 	position: fixed;
 	z-index: 1;
+	padding-top: -100px;
 	width: 100%;
 }
 header{
@@ -56,9 +93,15 @@ h2{
 }
 h1, h2{
 	font-weight: normal;
+	animation: typing 1s steps(100);
+	animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 p{
 	line-height: 150%;
+	animation: typing 1s steps(100);
+	animation-timeline: view();
+    animation-range: entry 0 cover 10%;
 }
 
 ul li{
@@ -78,9 +121,8 @@ ul li{
 	transition: background 0.5s ease-in-out;
 }
 .button:hover{
-	background:black;
-	color: white; 
-
+	background:white;
+	color: black; 
 }
 figcaption{
 	font-size: 10px;
@@ -90,6 +132,7 @@ figcaption{
 .intro-img{
 	box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
 	margin-top: 30px;
+	animation: wobble 1s infinite;
 }
 
 .skill-list {
